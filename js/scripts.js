@@ -1,9 +1,10 @@
 function numTranslate(userNum){
   var outputList = [];
+  name = $("#name").val();
 
-  for (var i = 0; i <= userNum; i++) {
+  for (var i = 1; i <= userNum; i++) {
     if (i.toString().includes("3")) {
-      outputList.push(" I'm sorry, Dave. I'm afraid I can't do that. " );
+      outputList.push(" I'm sorry, " + name + ". I'm afraid I can't do that. " );
     } else if (i.toString().includes("2")) {
       outputList.push(" Boop! ");
     } else if (i.toString().includes("1")) {

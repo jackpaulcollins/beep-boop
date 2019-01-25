@@ -19,21 +19,10 @@ function numTranslate(userNum){
 
 
 
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function(){
   $("#mainForm").submit(function(event){
     event.preventDefault();
-    var numInput = parseInt($("#inputNums").val());
-    var outPutNum = numTranslate(numInput);
+    var outPutNum = numTranslate(parseInt($("#inputNums").val()));
     $("#answers").append(outPutNum + ", ");
     $("#answers").show();
 

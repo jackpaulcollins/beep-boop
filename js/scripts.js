@@ -1,23 +1,20 @@
-function numTranslate(inputNumber){
-  var numList = [];
-  var num = inputNumber
+function numTranslate(userNum){
+  var outputList = [];
 
-  for (i = 0; i<= num; i++){
-    numList.push(i);
+  for (var i = 0; i <= userNum; i++) {
+
+    if (i.toString().includes("3")) {
+      outputList.push(" I'm sorry, Dave. I'm afraid I can't do that. " );
+    } else if (i.toString().includes("2")) {
+      outputList.push(" Boop! ");
+    } else if (i.toString().includes("1")) {
+      outputList.push(" Beep! ");
+    } else
+      outputList.push(" " +i);
     }
-    hasThree = numList.includes(3)
-    hasTwo = numList.includes(2)
-    hasOne = numList.includes(1)
 
-    console.log(hasThree,hasTwo,hasOne)
-    return numList;
-  }
-
-
-
-
-
-
+  return outputList;
+}
 
 
 
@@ -37,7 +34,5 @@ $(document).ready(function(){
     $("#answers").append(outPutNum + ", ");
     $("#answers").show();
 
-  })
-
-
-})
+  });
+});

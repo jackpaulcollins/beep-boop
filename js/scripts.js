@@ -2,7 +2,6 @@ function numTranslate(userNum){
   var outputList = [];
 
   for (var i = 0; i <= userNum; i++) {
-
     if (i.toString().includes("3")) {
       outputList.push(" I'm sorry, Dave. I'm afraid I can't do that. " );
     } else if (i.toString().includes("2")) {
@@ -12,9 +11,12 @@ function numTranslate(userNum){
     } else
       outputList.push(" " +i);
     }
+    return outputList;
+  }
 
-  return outputList;
-}
+
+
+
 
 
 

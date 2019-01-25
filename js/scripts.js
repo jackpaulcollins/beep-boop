@@ -1,7 +1,17 @@
-function numTranslate(){
-  alert();
+function numTranslate(inputNumbers){
+  var num = [];
+  var arrNums = num.push(inputNumbers);
+  console.log(num)
 
-}
+  for (i=0; i<num; i++){
+    
+
+      console.log(i)
+    }
+  }
+
+
+
 
 
 

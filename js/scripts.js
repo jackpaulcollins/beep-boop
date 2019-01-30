@@ -27,7 +27,7 @@ $(document).ready(function(){
   $("#mainForm").submit(function(event){
     event.preventDefault();
     var outPutNum = numTranslate(parseInt($("#inputNums").val()));
-    $("#answers").append(outPutNum + ", ");
+    $("#answers").text(outPutNum + ", ");
     $("#answers").show();
 
   });

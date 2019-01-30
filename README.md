@@ -10,26 +10,17 @@ If the translator gets to a double digit number it replaces the entire number wi
 
 #Specs
 
-Spec 1: The program returns the user input as a range
+Spec 1: The program asks the user for number and it displays it as a range
   input: 10
   output: 1,2,3,4,5,6,7,8,9,10
 
-Spec 1: The program converts the inputted numbers to a to a to a string
-  input: 1
-  output: "1"
+Spec 2: The program asks the user for their name, and displays it in the output if the proper condition is met (see Spec 3)
 
-Spec 3: The program search for each number to see if a 3 is included
-  input: 3
-  output: true
-  inputB: 2
-  outputB: false
+Spec 3: in the displayed text, the user will see the words 'Beep!' in place of instances of the number 1, "Boop!" in place of all instances of the number 2, "I'm sorry [user name] I can't do" for all instances of the number 3, and finally, "See, I am smart. This number is five" for all instances of the number 5.
+input: 9
+output: Beep! , Boop! , I'm sorry, Jack. I'm afraid I can't do that. , 4, See, I am smart. This number is five , 6, 7, 8, 9,
 
-  (the program then does this for 2 and 1 if no 3 is found)
-
-Spec 4: The program pushes the corresponding string into the output string that is displayed to the user
-  input: 1
-  output: "beep!"
-
+Spec 4: If the user enters a new name, and/or new number, the program erases the previous output and updates it with the new input
 
 
 

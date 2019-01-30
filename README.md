@@ -8,7 +8,7 @@ This translator takes in a number from a user. It then displays the number as a 
 
 If the translator gets to a double digit number it replaces the entire number with the appropriate string for whichever digit is highest in that number. For instance: 13 will become "I'm sorry Dave, I can't do that."
 
-#Specs
+# Specs
 
 Spec 1: The program asks the user for number and it displays it as a range
   input: 10
